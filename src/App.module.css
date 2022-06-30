@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.wrapper {
+  margin: 3vh 10vw;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.btn-footer {
+  text-align: center;
+}
+
+.btn-footer button{
+  background: #0069ed;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  max-width: 300px;
+  margin: 3vw;
+}
+
+.btn-footer button:hover{
+  filter: brightness(1.1);
+}
+
+

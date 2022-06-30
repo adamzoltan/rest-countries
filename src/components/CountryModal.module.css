@@ -1,0 +1,60 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+  }
+  
+.modal {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+    /* width: 300px;
+    height: 300px; */
+    background: whitesmoke;
+    text-align: center;
+    padding: .5rem;
+}
+
+.details{
+    text-align: center;
+    line-height: 2rem;
+    font-size: clamp(15px, 3vw, 25px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+}
+
+.details p {
+    margin: 1vw;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button {
+  text-align: center;
+  background: #0069ed;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  max-width: 300px;
+}
+
+button:hover{
+  filter: brightness(1.1);
+}
+
+@media (min-width: 768px) {
+    .modal {
+      left: calc(50% - 20rem);
+      width: 40rem;
+    }
+  }

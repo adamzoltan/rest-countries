@@ -1,0 +1,28 @@
+input, select{
+    height: 2rem;
+  }
+.filter-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter form{
+    margin-left: .7vw;
+}
+
+
+@media(max-width:550px) {
+    .filter-container{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    form{
+        margin: .3vh;
+    }
+}
