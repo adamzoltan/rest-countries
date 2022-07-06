@@ -67,10 +67,10 @@ function App() {
     if (orderByProperty) {
       switch(orderByProperty) {
         case "alphAsc":
-          filtered = [...filtered].sort((a, b) => (a.name - b.name))
+          filtered = [...filtered].sort((a, b) => (a.name > b.name) ? 1 : -1)
           break;
         case "alphDesc":
-            filtered = [...filtered].sort((a, b) => (a.name - b.name)).reverse()
+            filtered = [...filtered].sort((a, b) => (a.name < b.name) ? 1 : -1)
             break;
         case "popAsc":
           filtered = [...filtered].sort((a, b) => (a.population - b.population))
